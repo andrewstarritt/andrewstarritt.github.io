@@ -38,8 +38,8 @@ if the monitored value starts to match or ceases to match a set of PV specific c
 
 [internal test link](#acai)
 
-[local md test link](#blob/master/info.md)
+[local md test link](info.md)
 
-[html test link](#blob/master/extra.html)
+[html test link](extra.html)
 
 [comment]:# (And this is a comment)
