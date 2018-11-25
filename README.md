@@ -26,13 +26,20 @@ mangle is the binary equivalent of ROT13 - it does just enough to fool those pes
 
 ## kryten
 
-A command line EPICS Channel Access client that allows an arbitrary set of Process Variables (PVs) to be monitored, and for each PV invoke a PV specific system command if the monitored value starts to match or ceases to match a set of PV specific criteria,
+A command line EPICS Channel Access client that allows an arbitrary set of Process
+Variables (PVs) to be monitored, and for each PV invoke a PV specific system command
+if the monitored value starts to match or ceases to match a set of PV specific criteria,
 
 [Repository](https://github.com/andrewstarritt/kryten)<br>
 [README.md](https://github.com/andrewstarritt/kryten/blob/master/README.md)
 
 
+## test links
 
 [internal test link](#acai)
+
+[local md test link](#./info.md)
+
+[html test link](#./extra.html)
 
 [comment]:# (And this is a comment)
