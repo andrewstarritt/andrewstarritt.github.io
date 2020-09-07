@@ -13,7 +13,8 @@ A Python extension to provide a Quaternion type and some associated math functio
 ACAI is a thin-ish C++ wrapper around the low level Channel Access API that provides an Asynchronus Channel Access Interface.
 
 [Repository](https://github.com/andrewstarritt/acai)<br>
-[README.md](https://github.com/andrewstarritt/acai/blob/master/README.md)
+[README.md](https://github.com/andrewstarritt/acai/blob/master/README.md)<br>
+[Release Notes](https://github.com/andrewstarritt/acai/blob/master/documentation/release_notes.md)
 
 
 ## mangle
@@ -32,14 +33,3 @@ if the monitored value starts to match or ceases to match a set of PV specific c
 
 [Repository](https://github.com/andrewstarritt/kryten)<br>
 [README.md](https://github.com/andrewstarritt/kryten/blob/master/README.md)
-
-
-## test links
-
-[internal test link](#acai)
-
-[local md test link](info.md)
-
-[html test link](extra.html)
-
-[comment]:# (And this is a comment)
