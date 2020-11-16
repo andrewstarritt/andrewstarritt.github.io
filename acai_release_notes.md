@@ -1,4 +1,4 @@
-# <span style='color:#0066ee'>ACAI Release Notes</span>
+#  ![](acai_logo.png?raw=true) <span style='color:#0066ee'>ACAI Release Notes</span>
 
 __Note__: the release notes are a work in progress - currently focusing on the
 release notes for the most recent releases.
@@ -235,5 +235,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Mon Nov 16 20:32:16 AEDT 2020</font>
+<font size="-1">Last updated: Mon Nov 16 20:45:27 AEDT 2020</font>
 <br>
