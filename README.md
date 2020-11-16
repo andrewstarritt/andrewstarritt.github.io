@@ -14,7 +14,7 @@ ACAI is a thin-ish C++ wrapper around the low level Channel Access API that prov
 
 [Repository](https://github.com/andrewstarritt/acai)<br>
 [README.md](https://github.com/andrewstarritt/acai/blob/master/README.md)<br>
-[Release Notes](https://github.com/andrewstarritt/acai/blob/master/documentation/release_notes.md)
+[Release Notes](https://github.com/andrewstarritt/acai/blob/master/documentation/release_notes.html)
 
 
 ## mangle
