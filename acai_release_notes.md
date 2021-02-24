@@ -1,16 +1,43 @@
-#  <span style='color:#0066ee'>ACAI Release Notes</span> &nbsp; &nbsp; &nbsp; &nbsp; ![](acai_logo.png?raw=true) 
+#  <span style='color:#0066ee'>ACAI Release Notes</span> &nbsp; &nbsp; &nbsp; &nbsp; ![](acai_logo.png?raw=true)
 
 __Note__: the release notes are a work in progress - currently focusing on the
 release notes for the most recent releases.
 
 #### <span style='color:#0066ee'>Release Index</span>
 
+[1.6](#v1.6)<br>
 [1.5](#v1.5)<br>
 [1.4](#v1.4)<br>
 [1.3](#v1.3)<br>
 [1.2](#v1.2)<br>
 [1.1](#v1.1)<br>
 
+
+## <a name="v1.6"></a><span style='color:#0066ee'>1.6</span>
+
+The introduction of the 1.6 series was due to a modification to how the
+buffered callback queue is managed if/when the queue gets too large.
+
+### <span style='color:#00aa88'>1.6.1</span>
+
+Release date: 24-02-2021
+
+Modified buffered_callbacks to check for multiple updates for a channel
+and discard the updates if/when queue length exceeds threshold.
+
+The getString method now uses the %g format, as opposed to the %f format,
+for floats and doubles.
+This is really sensible for large numbers.
+
+acai_monitor option processing now allows combined "-mg" or "-gm" in lieu
+of "-m -g"
+
+Fixed a number of comment spelling/typo errors.
+
+Release notes relocated to the andrewstarritt.github.io repository and
+converted to mark-down.
+Also some, but not all, release notes have been back-filled.
+The README.md now links to the new release notes.
 
 ## <a name="v1.5"></a><span style='color:#0066ee'>1.5</span>
 
@@ -236,5 +263,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Sat Jan 16 14:56:07 AEDT 2021</font>
+<font size="-1">Last updated: Wed Feb 24 19:57:33 AEDT 2021</font>
 <br>
