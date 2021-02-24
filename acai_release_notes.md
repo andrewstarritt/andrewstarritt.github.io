@@ -1,4 +1,4 @@
-#  ![](acai_logo.png?raw=true) <span style='color:#0066ee'>ACAI Release Notes</span>
+#  <span style='color:#0066ee'>ACAI Release Notes</span> &nbsp; &nbsp; &nbsp; &nbsp; ![](acai_logo.png?raw=true) 
 
 __Note__: the release notes are a work in progress - currently focusing on the
 release notes for the most recent releases.
@@ -9,6 +9,7 @@ release notes for the most recent releases.
 [1.4](#v1.4)<br>
 [1.3](#v1.3)<br>
 [1.2](#v1.2)<br>
+[1.1](#v1.1)<br>
 
 
 ## <a name="v1.5"></a><span style='color:#0066ee'>1.5</span>
@@ -235,5 +236,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Mon Nov 16 20:45:27 AEDT 2020</font>
+<font size="-1">Last updated: Sat Jan 16 14:56:07 AEDT 2021</font>
 <br>
