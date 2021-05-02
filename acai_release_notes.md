@@ -1,7 +1,8 @@
 #  <span style='color:#0066ee'>ACAI Release Notes</span> &nbsp; &nbsp; &nbsp; &nbsp; ![](acai_logo.png?raw=true)
 
 __Note__: the release notes are a work in progress - currently focusing on the
-release notes for the most recent releases.
+release notes for the most recent releases, and back filling the older release
+notes as and when I find the time.
 
 #### <span style='color:#0066ee'>Release Index</span>
 
@@ -17,6 +18,17 @@ release notes for the most recent releases.
 
 The introduction of the 1.6 series was due to a modification to how the
 buffered callback queue is managed if/when the queue gets too large.
+
+### <span style='color:#00aa88'>1.6.2</span>
+
+Release date: 02-05-2021
+
+The clientFieldTypeImage function (out of acai_client_types) now returns
+"DBF_STRING", "DBF_SHORT" etc, as opposed to "STRING", "SHORT" etc.
+
+Re-modified the acai_client getString function to use %e for very small or
+very large numbers, and %f for regular numbers.
+The threshold between use of %e or %f is driven by the precision.   
 
 ### <span style='color:#00aa88'>1.6.1</span>
 
@@ -263,5 +275,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Wed Feb 24 19:57:33 AEDT 2021</font>
+<font size="-1">Last updated: Sun May  2 17:24:26 AEDT 2021</font>
 <br>
