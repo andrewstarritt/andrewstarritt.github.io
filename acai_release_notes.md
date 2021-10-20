@@ -19,6 +19,13 @@ notes as and when I find the time.
 The introduction of the 1.6 series was due to a modification to how the
 buffered callback queue is managed if/when the queue gets too large.
 
+### <span style='color:#00aa88'>1.6.3</span>
+
+Release date: 20-10-2021
+
+Fixed a bug and potential segment faults when writing an array of 
+type DBF_STRING.
+
 ### <span style='color:#00aa88'>1.6.2</span>
 
 Release date: 02-05-2021
@@ -275,5 +282,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Sun May  2 17:24:26 AEDT 2021</font>
+<font size="-1">Last updated: Wed Oct 20 14:43:47 AEDT 2021</font>
 <br>
