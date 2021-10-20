@@ -26,6 +26,10 @@ Release date: 20-10-2021
 Fixed a bug and potential segment faults when writing an array of 
 type DBF_STRING.
 
+Also use a better marco name, BUILDING_ACAI_LIBRARY, to indicate
+if/when we are building the shared library, as opposed to building
+against the the shared library header file.
+
 ### <span style='color:#00aa88'>1.6.2</span>
 
 Release date: 02-05-2021
@@ -282,5 +286,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Wed Oct 20 14:43:47 AEDT 2021</font>
+<font size="-1">Last updated: Wed Oct 20 15:34:33 AEDT 2021</font>
 <br>
