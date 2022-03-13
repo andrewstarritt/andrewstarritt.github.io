@@ -13,17 +13,40 @@ notes as and when I find the time.
 [1.2](#v1.2)<br>
 [1.1](#v1.1)<br>
 
-
 ## <a name="v1.6"></a><span style='color:#0066ee'>1.6</span>
 
-The introduction of the 1.6 series was due to a modification to how the
+The introduction of the 1.6 series is due to a modification to how the
 buffered callback queue is managed if/when the queue gets too large.
+
+### <span style='color:#00aa88'>1.6.4</span>
+
+Release date: 14-03-2022
+
+Added two new client functions that return the minimum and maximum values
+supported by the host's field type:
+
+    double minFieldValue () const;
+    double maxFieldValue () const;
+
+Example: -32768 and +32767 for the DBF_SHORT field type.
+Note: for DBF_CHAR, the range encompasses both CHAR and UCHAR,
+i.e. -128 and +255 respectively.
+
+Also added a function to provide the CA protocol version:
+
+    static ACAI::ClientString protocolVersion ();
+
+and aca_monitor now uses this when outputing version information.
+ 
+Also fixed up function spelling typo in many comments.
+
+Added the acai logo to the doxygen generated html files.
 
 ### <span style='color:#00aa88'>1.6.3</span>
 
 Release date: 20-10-2021
 
-Fixed a bug and potential segment faults when writing an array of 
+Fixed a bug and potential segment faults when writing an array of
 type DBF_STRING.
 
 Also use a better marco name, BUILDING_ACAI_LIBRARY, to indicate
@@ -286,5 +309,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Wed Oct 20 15:34:33 AEDT 2021</font>
+<font size="-1">Last updated: Sun Mar 13 20:21:06 AEDT 2022</font>
 <br>
