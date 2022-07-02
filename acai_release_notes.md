@@ -6,12 +6,70 @@ notes as and when I find the time.
 
 #### <span style='color:#0066ee'>Release Index</span>
 
+[1.7](#v1.7)<br>
 [1.6](#v1.6)<br>
 [1.5](#v1.5)<br>
 [1.4](#v1.4)<br>
 [1.3](#v1.3)<br>
 [1.2](#v1.2)<br>
 [1.1](#v1.1)<br>
+
+
+## <a name="v1.7"></a><span style='color:#0066ee'>1.7</span>
+
+The introduction of the 1.7 series is due to how the ACAI client stores and
+uses PV names internally.
+
+### <span style='color:#00aa88'>1.7.1</span>
+
+Release date: 03-07-2022
+
+#### PV Names
+
+The ACAI client now stores PV names in a std::string as opposed to a
+plain char buffer array of size defined by PVNAME_STRINGSZ, i.e. 61.
+The 61, or 60 limit after exluding the zero, is the IOC's record name
+limit and does not allow for field names and/or additional filters and
+qualifiers, e.g.
+
+    RECORD_NAME.VAL[10001:20001]
+
+Also the 60 limit does not necessarily apply to other Channel Access servers.
+
+#### Client API
+
+The API for putByteArray has changed from:
+
+    bool putByteArray (void* valueArray, const unsigned int count);
+
+to:
+
+    bool putByteArray (const void* valueArray, const unsigned int count);
+
+This should have no practical impact.
+
+#### Long Strings
+
+The acai_monitor program now take an __-l, --longstr__ option which tells the
+program to treat arrays of DBF_CHAR as long strings, i.e. similar to the
+caget -S option.
+
+#### Shared Libary Version
+
+The SHRLIB_VERSION in the Makefile is now just the major and minor
+release numbers, i.e. is defined as:
+
+    SHRLIB_VERSION = 1.7
+
+and not as:
+
+    SHRLIB_VERSION = 1.7.1
+
+#### Private Header File
+
+The acai_private_common.h header file is no longer "built" into the
+&lt;top&gt;/include directory.
+
 
 ## <a name="v1.6"></a><span style='color:#0066ee'>1.6</span>
 
@@ -37,7 +95,7 @@ Also added a function to provide the CA protocol version:
     static ACAI::ClientString protocolVersion ();
 
 and aca_monitor now uses this when outputing version information.
- 
+
 Also fixed up function spelling typo in many comments.
 
 Added the acai logo to the doxygen generated html files.
@@ -134,7 +192,7 @@ This function attempts to cast a void* to a Client* and checks the internal
 magic numbers.
 It returns NULL if cast fails, similar to dynamic_cast.
 
-The client hostname isnow inclued in acai_monitor meta data output.
+The client hostname is now included in acai_monitor meta data output.
 
 Fixed the fuction *[sic]* typo.
 
@@ -309,5 +367,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Sun Mar 13 20:21:06 AEDT 2022</font>
+<font size="-1">Last updated: Sat Jul  2 18:46:29 AEST 2022</font>
 <br>
