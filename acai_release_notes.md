@@ -20,6 +20,19 @@ notes as and when I find the time.
 The introduction of the 1.7 series is due to how the ACAI client stores and
 uses PV names internally.
 
+### <span style='color:#00aa88'>1.7.2</span>
+
+Release date: 18-07-2022
+
+Fixed up the total stuff up with the initilisation of an internal ACAI::Client
+private data class.
+This updated avoids segmentation faults on platforms such as CentOS Stream 8 and
+Rocky Linux (however I got-away-with-it on CebtOS 7).
+
+Also now store the PV's hostname:port using a standard string (as opposed to a
+traditional char buffer).
+The obsolete ACAI_MAX_PVNAME_LENGTH macro has been removed.
+
 ### <span style='color:#00aa88'>1.7.1</span>
 
 Release date: 03-07-2022
@@ -367,5 +380,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Sat Jul  2 18:46:29 AEST 2022</font>
+<font size="-1">Last updated: Mon Jul 18 21:50:13 AEST 2022</font>
 <br>
