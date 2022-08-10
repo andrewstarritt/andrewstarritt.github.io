@@ -20,6 +20,19 @@ notes as and when I find the time.
 The introduction of the 1.7 series is due to how the ACAI client stores and
 uses PV names internally.
 
+### <span style='color:#00aa88'>1.7.3</span>
+
+Release date: 10-08-2022
+
+Added a new function getEnumerationIndex (string to int) function which is the
+reverse of getEnumeration (int to string), i.e. it allow an enumeration state
+string to be converted to in integer (or returns -1 when no match).<br>
+__Note:__ the conversion is strict in that it __is__ case and white space
+sensitive.
+
+Modified the minFieldValue/maxFieldValue functions to refect the number of 
+enumeration states when the field type is DBF_ENUM.
+
 ### <span style='color:#00aa88'>1.7.2</span>
 
 Release date: 18-07-2022
@@ -380,5 +393,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Mon Jul 18 21:50:13 AEST 2022</font>
+<font size="-1">Last updated: Wed Aug 10 19:08:49 AEST 2022</font>
 <br>
