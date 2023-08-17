@@ -20,6 +20,23 @@ notes as and when I find the time.
 The introduction of the 1.7 series is due to how the ACAI client stores and
 uses PV names internally.
 
+### <span style='color:#00aa88'>1.7.5</span>
+
+Release date: 17-07-2023
+
+
+Change guard macro names to have single under score (as opposed to double underscore).
+If doxygen latex available, generate a pdf reference manual.
+
+### <span style='color:#00aa88'>1.7.4</span>
+
+Release date: 01-04-2023
+
+Updated license to LGPL.
+Added methods to read/write bools and bool arrays.
+Updated the getString method to better choose between fixed point and exponential formats.
+
+
 ### <span style='color:#00aa88'>1.7.3</span>
 
 Release date: 10-08-2022
