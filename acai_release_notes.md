@@ -19,23 +19,47 @@ notes as and when I find the time.
 
 The introduction of the 1.7 series is due to how the ACAI client stores and
 uses PV names internally.
+Previously used a fixed length char array based on the maximum IOC record name length.
+It now uses a std::string which allow longer PV names, which in turn caters for extended
+json filter qualifiers and other Channel Access servers not subject to the record name
+length limit.
+
+### <span style='color:#00aa88'>1.7.6</span>
+
+Release date: 29-03-2025
+
+acai now uses POSIX_TIME_AT_EPICS_EPOCH out of epicsTime.h instead of own copy.
+
+acai_monitor changes are:
+
+ - added an event mask option.
+ - provided an option to request all elements of an array
+ - re-order how meta data items are present to the user.
+ - find and use maximum PV name length, use better output format.
+
+Improved how pdf manual is generated, esp. with respect to failures.
+Temporary files are now suffixed by .local, and hence ignored by gitignore.
+
 
 ### <span style='color:#00aa88'>1.7.5</span>
 
 Release date: 17-07-2023
 
-
-Change guard macro names to have single under score (as opposed to double underscore).
-If doxygen latex available, generate a pdf reference manual.
+Configure doxygen to create a PDF manual.
+This requires latex.
+This change will not fail the overall build if latex not available.
 
 ### <span style='color:#00aa88'>1.7.4</span>
 
-Release date: 01-04-2023
+Release date: 10-08-2022
 
-Updated license to LGPL.
-Added methods to read/write bools and bool arrays.
-Updated the getString method to better choose between fixed point and exponential formats.
+Updated from GPL to LGPL license - no functional changes.
 
+Added methed to get/put boolean and get/put boolean arrays.
+For the gut functions checks if value is equal/not equal 0.
+For the put functions, writes 0 or 1 as DBF_LONG.
+
+Improved getString for float values.
 
 ### <span style='color:#00aa88'>1.7.3</span>
 
@@ -411,5 +435,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Thu Sep 29 20:29:02 AEST 2022</font>
+<font size="-1">Last updated: Sat Mar 29 12:17:15 2025</font>
 <br>
