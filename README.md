@@ -25,7 +25,7 @@ pesky e-mail filters.
 [Repository](https://github.com/andrewstarritt/mangle)<br>
 [README.md](https://github.com/andrewstarritt/mangle/blob/master/README.md)
 
-Suggested usage is to create a tarball file (or zip fike or similar) containing
+Suggested usage is to create a tarball file (or zip file or similar) containing
 the actual files of iterest, then mangle the tar file before e-mailing.
 This hides files with extensions that e-mail filters look out for, such
 as .cmd or .bat or even actual executables.

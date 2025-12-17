@@ -6,6 +6,7 @@ notes as and when I find the time.
 
 #### <span style='color:#0066ee'>Release Index</span>
 
+[1.8](#v1.8)<br>
 [1.7](#v1.7)<br>
 [1.6](#v1.6)<br>
 [1.5](#v1.5)<br>
@@ -13,6 +14,40 @@ notes as and when I find the time.
 [1.3](#v1.3)<br>
 [1.2](#v1.2)<br>
 [1.1](#v1.1)<br>
+
+
+## <a name="v1.8"></a><span style='color:#0066ee'>1.8</span>
+
+The introduction of the 1.8 series introduces a change as to how the ACAI client
+uses the eventMask specified using the setEventMask method.
+If the eventMask includes EventProperty, a separate DBR_CTRL_XXXX property
+subscription is created which means the client will receive a full meta data
+update if/when the a property value (such as EGU, precsison, enumeration values) change.
+
+The call back function and overideable dataUpdate method reflect this wiht the
+parameter name changing for isFirstUpdate to isMetaUpdate.
+
+__Note:__ the default event mask is is unchanged and still is: EventValue | EventAlarm.
+If EventProperty is not used, then there is no change of behaviour.
+
+### <span style='color:#00aa88'>1.8.1</span>
+
+Release date: 17-12-2025
+
+The changes are:
+
+ - Event mask handling as described in paragraph [1.8](#v1.8) above.
+
+ - All code files updated to use the SPDX-License nothation.<br>
+   Note, this is now explicity LGPL-3.0-_only_.
+
+ - Removed the mutual include between ACAI::Client_Set and  
+   ACAI::Abstract_Client_User.<br>  
+   The ACAI::Client_Set now no longer "knows about" the  
+   ACAI::Abstract_Client_User class.  
+   This avoids a seg fault error when running test_abstract_user.
+
+ - Added test.sh script to run all three tests.
 
 
 ## <a name="v1.7"></a><span style='color:#0066ee'>1.7</span>
@@ -435,5 +470,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Sat Mar 29 12:17:15 2025</font>
+<font size="-1">Last updated: Wed Dec 17 18:59:23 2025</font>
 <br>
