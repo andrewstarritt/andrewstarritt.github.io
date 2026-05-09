@@ -30,6 +30,24 @@ parameter name changing for isFirstUpdate to isMetaUpdate.
 __Note:__ the default event mask is is unchanged and still is: EventValue | EventAlarm.
 If EventProperty is not used, then there is no change of behaviour.
 
+### <span style='color:#00aa88'>1.8.2</span>
+
+Release date: 09-05-2026
+
+The changes are:
+
+ - acai_client: perform in place construction of the PrivateData object to avould  
+   double memory allocation/deallocation.  
+   Co-located the declaration of all the bool values to reduce padding.  
+   Ensure the localBuffer is aligned to 8 bytes.  
+   Converted runtime size checks to static_assert compile time checks.
+
+ - acai_monitor: count the connection timeouts and terminate if all the channels time out.  
+   Minor impovements to the -h/--help info.
+
+ - Updated the _anon_ function in test_csnprintf.cpp to keep the mingw compiler happy.
+
+
 ### <span style='color:#00aa88'>1.8.1</span>
 
 Release date: 17-12-2025
@@ -470,5 +488,5 @@ became
 ### <span style='color:#00aa88'>1.1.1</span>
 
 
-<font size="-1">Last updated: Wed Dec 17 18:59:23 2025</font>
+<font size="-1">Last updated: Sat May  9 13:21:03 2026</font>
 <br>
